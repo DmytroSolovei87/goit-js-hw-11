@@ -24,6 +24,7 @@ refs.loadMoreBtn.addEventListener('click', onLoadMoreBtnClick);
 
 async function onSearchFormSubmit(e) {
   e.preventDefault();
+  page = 1;
   refs.gallery.innerHTML = '';
   inputValue = e.currentTarget.elements.searchQuery.value.trim();
 
